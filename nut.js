@@ -1,4 +1,4 @@
-import dgram from "node:dgram";
+const dgram = require('dgram');
 const sv = dgram.createSocket("udp4");
 sv.on('connect' , () => {
     console.log("Nut Connected");
